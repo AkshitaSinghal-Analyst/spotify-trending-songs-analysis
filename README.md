@@ -2,6 +2,7 @@
 
 ## Project Overview
 This project analyzes Spotify trending songs using streaming statistics, chart rankings, artist information, and genre data to identify music trends, popularity patterns, and chart performance.
+
 The analysis covers exploratory data analysis, feature engineering, correlation analysis, song classification, and linear regression.
 
 ## Objective
@@ -22,6 +23,7 @@ The dataset includes information such as:
 - Weeks on chart
 - Streams
 - Genre
+
 No missing values were found in the dataset. :contentReference[oaicite:1]{index=1}
 
 ## Tools Used
@@ -46,6 +48,7 @@ Three derived features were created during the analysis:
 - **Popularity Score** = Streams ÷ Rank
 - **Stability Score** = Weeks on Chart × Streams
 - **Rank Improvement** = Previous Rank − Current Rank
+
 These features were used to analyze streaming popularity, chart stability, and ranking momentum. :contentReference[oaicite:2]{index=2}
 
 ## Song Classification
@@ -53,6 +56,7 @@ Songs were classified into three categories based on their weeks on chart:
 - **Evergreen Hit** — 30+ weeks on chart
 - **Trending Song** — 15 to 29 weeks
 - **New Viral Song** — under 15 weeks
+
 The classification was used to understand differences in chart longevity and audience engagement. :contentReference[oaicite:3]{index=3}
 
 ## Regression Model
@@ -61,12 +65,14 @@ A Linear Regression model was trained to predict streams using:
 - Peak Rank
 - Weeks on Chart
 - Popularity Score
+
 The dataset was divided into 80% training data and 20% test data.
 
 ### Model Performance
 - **R² Score:** 0.857
 - **MAE:** 308,031
 - **MSE:** 164,955,639,128
+  
 The model explained approximately 85.7% of the variance in streams using the selected chart-based features. :contentReference[oaicite:4]{index=4}
 
 ## Key Findings
